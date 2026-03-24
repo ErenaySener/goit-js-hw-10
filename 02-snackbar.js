@@ -1,0 +1,2 @@
+import"./assets/common-CjCF5XBL.js";import{i}from"./assets/vendor-BbbuE1sJ.js";const m=document.querySelector(".form");m.addEventListener("submit",e=>{e.preventDefault();const t=new FormData(e.currentTarget),s=Number(t.get("delay")),o=t.get("state");n(s,o).then(r=>{i.success({message:`✅ Fulfilled promise in ${r}ms`,position:"topRight"})}).catch(r=>{i.error({message:`❌ Rejected promise in ${r}ms`,position:"topRight"})}),m.reset()});function n(e,t){return new Promise((s,o)=>{setTimeout(()=>{t==="fulfilled"?s(e):o(e)},e)})}
+//# sourceMappingURL=02-snackbar.js.map
